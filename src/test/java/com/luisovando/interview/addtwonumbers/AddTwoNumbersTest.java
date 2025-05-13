@@ -50,4 +50,20 @@ public class AddTwoNumbersTest {
         assertEquals(8, result.next.next.val);
         assertNull(result.next.next.next);
     }
+
+    @Test
+    public void testAdditionWithDifferentLengthLists() {
+        ListNode l1 = new ListNode(9);
+        l1.next = new ListNode(9);
+
+        ListNode l2 = new ListNode(1);
+
+        ListNode result = AddTwoNumbers.addTwoNumbers(l1, l2);
+
+        assertNotNull(result);
+        assertEquals(0, result.val);
+        assertEquals(0, result.next.val);
+        assertEquals(1, result.next.next.val);
+        assertNull(result.next.next.next);
+    }
 }
