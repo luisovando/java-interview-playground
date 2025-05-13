@@ -1,5 +1,11 @@
 # Java Interview Playground 🧠 ☕️
 
+![Java](https://img.shields.io/badge/Java-17-blue.svg)
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
+![Tests](https://img.shields.io/badge/Tests-100%25-green)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+
 Welcome to my personal playground for mastering Java coding interviews using **TDD**, **clean code**, and **data structures**.
 
 This repository documents my hands-on practice through:
