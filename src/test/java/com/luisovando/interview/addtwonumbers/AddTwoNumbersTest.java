@@ -31,4 +31,23 @@ public class AddTwoNumbersTest {
         assertEquals(1, result.next.val);
         assertNull(result.next.next);
     }
+
+    @Test
+    public void testMultipleDigitAddition() {
+        ListNode l1 = new ListNode(2);
+        l1.next = new ListNode(4);
+        l1.next.next = new ListNode(3);
+
+        ListNode l2 = new ListNode(5);
+        l2.next = new ListNode(6);
+        l2.next.next = new ListNode(4);
+
+        ListNode result = AddTwoNumbers.addTwoNumbers(l1, l2);
+
+        assertNotNull(result);
+        assertEquals(7, result.val);
+        assertEquals(0, result.next.val);
+        assertEquals(8, result.next.next.val);
+        assertNull(result.next.next.next);
+    }
 }
